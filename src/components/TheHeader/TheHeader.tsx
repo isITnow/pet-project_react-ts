@@ -1,9 +1,12 @@
-import styles from './TheHeader.module.scss';
 
-interface TheHeaderProps { }
+import { ThemeSwitcher } from 'components/ThemeSwitcher';
+import s from './TheHeader.module.scss';
 
-export const TheHeader = ({ }: TheHeaderProps) => (
-  <div className={styles.theHeader}>
-    TheHeader Component
+export const TheHeader = () => (
+  <div className={s.header}>
+    <span className={s.logo}>
+      gevfinder
+    </span>
+    <ThemeSwitcher />
   </div>
 );
