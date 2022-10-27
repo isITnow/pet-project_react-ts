@@ -1,2 +1,1 @@
-# pet-project_react-ts
-"find developer" app
+# Проект GitHub user finder
