@@ -12,7 +12,7 @@
 
 .userStats {
     display: grid;
-    grid-template-columns: repeat(3, fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 15px 32px;
     color: var(--stat-color);
     background-color: var(--stat-bg);
@@ -25,14 +25,14 @@
     gap: 0.5rem;
 
     &Title {
-        display: block;
+        // display: inline-block;
         color: var(--gray-200);
         font-size: 0.75rem;
         line-height: 1.5;
     }
 
     &Number {
-        display: block;
+        // display: inline-block;
         font-size: 1.25rem;
         line-height: 1.5;
         font-weight: 700;
