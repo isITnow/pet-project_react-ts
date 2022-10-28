@@ -15,7 +15,7 @@ type FormField = {
 export const Search = ({ hasError, onSubmit }: ISearchProps) => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement & FormField>) => {
     event.preventDefault()
-    const text = event.currentTarget.user.value;
+    const text = event.currentTarget.user.value.trim();
     if (text) {
       onSubmit(text);
       event.currentTarget.reset()
